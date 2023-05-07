@@ -1,0 +1,9 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: eurekaserver
+eureka:
+  client:
+    service-url:  # eureka的地址信息
+      defaultZone: http://localhost:8083/eureka
