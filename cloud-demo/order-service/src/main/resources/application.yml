@@ -11,9 +11,12 @@ spring:
   cloud:
     nacos:
       server-addr: localhost:8848 #nacos地址
-      discovery:
-        cluster-name: GX
-        namespace: beb19c11-67ad-401c-a27c-b08eadc89f21 # 环境隔离
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+#      discovery:
+#        cluster-name: GX
+#        namespace: beb19c11-67ad-401c-a27c-b08eadc89f21 # 环境隔离
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
